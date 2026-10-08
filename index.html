@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <div class="app-shell">
+      <aside class="preview-panel">
+        <div class="nav-row">
+          <div class="brand-mark">P</div>
+          <span class="brand-name">Pulse</span>
+          <button class="nav-pill" type="button">Live</button>
+        </div>
+
+        <div class="intro-block">
+          <p class="eyebrow">Meet the next wave</p>
+          <h1>Build your circle. Share your story.</h1>
+          <p class="subtitle">
+            Discover creators, grow meaningful relationships, and stay connected to the moments that matter.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Followers</span>
+            <strong>1.2M</strong>
+          </div>
+          <div class="stat-card accent">
+            <span class="stat-label">Engagement</span>
+            <strong>94%</strong>
+          </div>
+        </div>
+
+        <div class="feed-card">
+          <div class="feed-header">
+            <div class="avatar-stack">
+              <span class="avatar a1">A</span>
+              <span class="avatar a2">M</span>
+              <span class="avatar a3">N</span>
+            </div>
+            <span class="status-dot"></span>
+          </div>
+
+          <div class="post-card">
+            <div class="user-row">
+              <div class="user-avatar">J</div>
+              <div>
+                <strong>Jasmine Lee</strong>
+                <small>@jasminelive</small>
+              </div>
+            </div>
+            <p>
+              “Morning coffee, community energy, and ideas worth building. What are you creating today?”
+            </p>
+            <div class="post-tags">
+              <span>#Creators</span>
+              <span>#MorningWins</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-inner">
+          <div class="auth-header">
+            <span class="mini-tag">Welcome back</span>
+            <button class="theme-button" type="button">Light</button>
+          </div>
+
+          <div class="form-top">
+            <h2>Sign in</h2>
+            <p>Use your account to continue to Pulse.</p>
+          </div>
+
+          <form id="loginForm" novalidate>
+            <div class="method-switch">
+              <button class="method-chip active" type="button">Email</button>
+              <button class="method-chip" type="button">Phone</button>
+              <button class="method-chip" type="button">QR</button>
+            </div>
+
+            <label class="input-group">
+              <span>Email address</span>
+              <input id="email" type="email" placeholder="hello@pulse.app" autocomplete="email" />
+            </label>
+
+            <label class="input-group">
+              <span>Password</span>
+              <div class="password-wrap">
+                <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" />
+                <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+              </div>
+            </label>
+
+            <div class="meta-row">
+              <label class="remember-box">
+                <input type="checkbox" checked />
+                <span>Remember me</span>
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="primary-button" type="submit">Continue</button>
+
+            <div class="divider"><span>or sign in with</span></div>
+
+            <div class="oauth-row">
+              <button type="button" class="oauth-button">Google</button>
+              <button type="button" class="oauth-button">Apple</button>
+            </div>
+          </form>
+
+          <p class="signup-copy">New to Pulse? <a href="#">Create account</a></p>
+          <p id="statusMessage" class="status-message" aria-live="polite"></p>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
